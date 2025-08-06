@@ -1,0 +1,23 @@
+[project]
+name = "patient-handler"
+version = "0.1.0"
+description = "Sistema de gestión de pacientes basado en Flask"
+authors = [
+    {name = "David", email = "dagobar.pk.db@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "flask (==3.1.1)",
+    "flask-cors (==6.0.1)",
+    "sqlalchemy (==2.0.41)",
+    "pytest (==8.4.1)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "0.12.4"
+mypy = "1.17.0"
